@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgba(240, 235, 235, 0.904) !important;
+}
+
+.hidden{
+    overflow: hidden;
+}
+.activo{
+    color: rgba(235, 235, 5, 0.904) !important;
+    border-bottom: 2px solid rgba(235, 235, 5, 0.904);
+    width: 100%;;
+    text-transform: uppercase !important;
+    transition: ease-in-out .1s !important;
+    font-weight: bold !important;
+}
+
+.fuente{
+    font-family: 'Audiowide', cursive !important;
+}
+/*
+font-family: 'Audiowide', cursive;
+font-family: 'Encode Sans Condensed', sans-serif;
+*/
+.fuente-1{
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-weight: bold;
+}
+.carrusel img{
+    height: 100vh;
+    
+}
+
+/* .trailler{
+    position: absolute;
+    top: 28%;
+    left: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+} */
+
+

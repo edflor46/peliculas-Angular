@@ -1,0 +1,13 @@
+<h1>Listado de peliculas</h1>
+<hr />
+
+<div class="container main-container mt-4">
+  <div class="card-columns">
+    <app-tarjeta-pelicula
+      (heroeSeleccionado)="verPelicula($event)"
+      [pelicula]="pelicula"
+      [index]="i"
+      *ngFor="let pelicula of peliculas; let i = index"
+    ></app-tarjeta-pelicula>
+  </div>
+</div>

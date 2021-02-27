@@ -1,0 +1,13 @@
+<h1>Resultado: <small>{{termino}}</small></h1>
+
+<div class="row" *ngIf="peliculas.length == 0">
+    <div class="col-md-12">
+        <div class="alert alert-danger" role="alert">
+            No se encontraron resultados para la busqueda: {{termino}}
+        </div>
+    </div>
+</div>
+
+<div class="card-columns">
+    <app-tarjeta-pelicula [pelicula]="pelicula" [index]="pelicula.idx" *ngFor="let pelicula of peliculas"></app-tarjeta-pelicula>
+</div>

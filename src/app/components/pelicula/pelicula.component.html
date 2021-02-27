@@ -1,0 +1,43 @@
+<div class="container-xl">
+  <h1>
+    {{ pelicula.nombre | uppercase }}
+    <small>({{ pelicula.estreno}})</small>
+  </h1>
+  <hr />
+
+  <div class="row">
+    <div class="col-md-4">
+      <img [src]="pelicula.img" class="img-fluid" [alt]="pelicula.nombre"/>
+      <br /><br />
+      <a [routerLink]="['/peliculas']" class="btn btn-outline-dark d-block"
+        >Volver</a
+      >
+    </div>
+
+    <div class="col-md-8 col-sm-8">
+      <h3>{{ pelicula.nombre }}</h3>
+      <hr />
+      <span><strong>Sipnopsis: </strong></span>
+      <p>{{ pelicula.sipnopsis }}</p>  
+      <span><strong>Genero: </strong></span>
+      <p>{{ pelicula.genero }}</p>
+      <span><strong>Fecha de estreno: </strong></span>
+      <p>{{ pelicula.estreno }}</p>
+      <span><strong>País de origen: </strong></span>
+      <p>{{ pelicula.pais }}</p>
+      <span><strong>Fecha de estreno: </strong></span>
+      <p>{{ pelicula.estreno }}</p>
+      <span><strong>Productora: </strong></span>
+      <p>{{ pelicula.productora }}</p>
+      <span><strong>Reparto: </strong></span>
+      <p>{{ pelicula.reparto }}</p>
+
+      <!-- <div class="trailler">
+        <video width="100%" autoplay controls="true" [src]="pelicula.trailler"></video>
+      </div> -->
+    </div>
+  </div>
+  <div class="row">
+      
+  </div>
+</div>

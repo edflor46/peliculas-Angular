@@ -1,0 +1,47 @@
+<nav class="fuente navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" [routerLink]="['inicio']">
+    Peliculas
+    <img
+      src="assets/img/icono.png"
+      class="d-inline-block"
+      width="30"
+      height="30"
+      alt="icono"
+    />
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarTogglerDemo02"
+    aria-controls="navbarTogglerDemo02"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse"  id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="[ 'inicio']" routerLinkActive="activo"
+          >Inicio <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['peliculas']" routerLinkActive="activo">Peliculas</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['acerca']" routerLinkActive="activo">Acerca de</a>
+      </li>
+     
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 border-warning" type="search" #buscarTexto (keyup.enter)="buscarPelicula(buscarTexto.value)" placeholder="Buscar una pelicula"/>
+      <button (click)="buscarPelicula(buscarTexto.value)" class="btn btn-outline-warning my-2 my-sm-0" type="submit">
+        Buscar
+      </button>
+    </form>
+  </div>
+</nav>
