@@ -16,3 +16,6 @@ Aplicación desarrollada en **Angular** en la que muestra un catalago de pelicul
 ![img_5!](src/assets/img/5.png)
 
 ![img_6!](src/assets/img/6.png)
+
+#### Netlify Demo
+https://loving-sammet-273501.netlify.app/inicio
